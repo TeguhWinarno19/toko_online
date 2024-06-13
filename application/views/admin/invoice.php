@@ -16,7 +16,7 @@
             <th>Tanggal Pemesanan</th>
             <th>Batas Pembayaran</th>
             <th>Email Pembeli</th>
-            <th>status</th>
+            <th>Pembayaran</th>
             <th colspan="3">Aksi</th>
 
         </tr>
