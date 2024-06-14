@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="card">
-        <h5 class="card-header">Detail Productku</h5>
+        <h5 class="card-header">Detail Product</h5>
         <div class="card-body">
             <?php foreach($barang as $brg): ?>
             <div class="row">
