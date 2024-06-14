@@ -49,7 +49,12 @@
                         </small><br>
                         <h6 class="card-subtitle mt-1 mb-1 text-success">Rp. <?php echo number_format($brg->harga, 0, ',', '.'); ?></h6>
                         <div class="d-grid gap-2 d-md-block">
-                                <?php echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-warning mb-1">add to chart</div>'); ?>
+                        <?php
+                                if ($user['name'] == "") {
+                                } else {
+                                    echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-warning mb-1">add to chart</div>');
+                                }
+                                ?>
                                 <?php echo anchor('dashboard/detail/'.$brg->id_brg, '<div class="btn btn-success">Detail</div>'); ?>
                         </div>
                     </div>
