@@ -144,7 +144,7 @@
                         <div class="navbar">
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="nav-item">
-                                    <a class="btn btn-primary btn-user btn-block" href="<?= base_url('auth') ?>">Login</a>
+                                    <a class="btn btn-success btn-user btn-block" href="<?= base_url('auth') ?>">Login</a>
                                 </li>
                             </ul>
                         </div>

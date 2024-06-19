@@ -9,16 +9,16 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?php echo base_url('assets/img/sliderA.jpg') ?>" class="d-block w-100" alt="...">
+                <img src="<?php echo base_url('assets/img/sliderA.png') ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="<?php echo base_url('assets/img/sliderB.jpg') ?>" class="d-block w-100" alt="...">
+                <img src="<?php echo base_url('assets/img/sliderB.png') ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="<?php echo base_url('assets/img/sliderC.jpg') ?>" class="d-block w-100" alt="...">
+                <img src="<?php echo base_url('assets/img/sliderC.png') ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="<?php echo base_url('assets/img/sliderD.jpg') ?>" class="d-block w-100" alt="...">
+                <img src="<?php echo base_url('assets/img/sliderD.png') ?>" class="d-block w-100" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
