@@ -2,7 +2,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: brown;">
 
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon">
@@ -102,7 +102,7 @@
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2" name="search">
                             <div class="input-group-append">
-                                <button class="btn btn-success" type="submit">
+                                <button class="btn btn-secondary" type="submit">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
@@ -144,7 +144,7 @@
                         <div class="navbar">
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="nav-item">
-                                    <a class="btn btn-success btn-user btn-block" href="<?= base_url('auth') ?>">Login</a>
+                                    <a class="btn btn-secondary btn-user btn-block" href="<?= base_url('auth') ?>">Login</a>
                                 </li>
                             </ul>
                         </div>

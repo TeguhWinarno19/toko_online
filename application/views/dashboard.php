@@ -39,7 +39,7 @@
                         <h5 class="card-title mb-1"><?php echo htmlspecialchars($brg->nama_brg); ?></h5>
                         <small>
                             <?php 
-                            $max_length = 30;
+                            $max_length = 20;
                             if(strlen($brg->keterangan) > $max_length) {
                                 echo htmlspecialchars(substr($brg->keterangan, 0, $max_length) . '...');
                             } else {
@@ -52,10 +52,10 @@
                         <?php
                                 if ($user['name'] == "") {
                                 } else {
-                                    echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-warning mb-1">add to chart</div>');
+                                    echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-warning mb-1 mt-1">add to chart</div>');
                                 }
                                 ?>
-                                <?php echo anchor('dashboard/detail/'.$brg->id_brg, '<div class="btn btn-success">Detail</div>'); ?>
+                                <?php echo anchor('dashboard/detail/'.$brg->id_brg, '<div class="btn btn-primary">Detail</div>'); ?>
                         </div>
                     </div>
                 </div>

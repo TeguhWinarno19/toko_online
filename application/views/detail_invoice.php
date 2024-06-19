@@ -1,12 +1,12 @@
 <div class="container-fluid">
-    <h4>Detail Pesanan
-        <div class="btn btn-sm btn-success">
+    <h4>Detail Pesanan</h4>
+    <br>
+    <div class="bg-color-success">
             No. Invoice :
             <?php
             echo $invoice->id
             ?>
         </div>
-    </h4>
 
     <table class=" table table-bordered table-hover table-striped">
         <tr>
