@@ -30,10 +30,10 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="row m-1">
+    <div class="row m-1 w-100">
         <?php if (!empty($barang)) { ?>
             <?php foreach ($barang as $brg) : ?>
-                <div class="card m-1" style="width: 18rem;">
+                <div class="card m-1" style="width: 19%;">
                     <img src="<?php echo base_url('/uploads/'.$brg->gambar) ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title mb-1"><?php echo htmlspecialchars($brg->nama_brg); ?></h5>
