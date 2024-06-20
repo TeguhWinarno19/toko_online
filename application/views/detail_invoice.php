@@ -2,11 +2,11 @@
     <h4>Detail Pesanan</h4>
     <br>
     <div class="bg-color-success">
-            No. Invoice :
-            <?php
-            echo $invoice->id
-            ?>
-        </div>
+        No. Invoice :
+        <?php
+        echo $invoice->id
+        ?>
+    </div>
 
     <table class=" table table-bordered table-hover table-striped">
         <tr>
