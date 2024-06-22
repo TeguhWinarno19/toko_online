@@ -5,6 +5,7 @@
         class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50">
         </i> Generate Report</a>
     </div>
+    <?php if (!empty($barang)) { ?>
     <?php $pendapatan = 0; ?>
     <?php $pending = 0; ?>
     <?php $invoiceku = 0; ?>
@@ -87,4 +88,5 @@
             </div>
         </div>
     </div>
+    <?php } ?>
 </div>
