@@ -20,6 +20,7 @@
             <th colspan="3">Aksi</th>
 
         </tr>
+        <?php if (!empty($invoice)) { ?> 
         <?php
         $no = 1;
         foreach ($invoice as $inv): ?>
@@ -46,5 +47,6 @@
             } ?></td>
         </tr>
         <?php endforeach; ?>
+        <?php } ?>
     </table>
 </div>

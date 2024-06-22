@@ -88,5 +88,7 @@
             </div>
         </div>
     </div>
+    <?php } else { ?>
+            <p style="font-style: italic; color: #888;">Maaf, tidak ada data yang tersedia saat ini.</p>
     <?php } ?>
 </div>

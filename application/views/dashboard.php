@@ -47,12 +47,14 @@
                             }
                             ?>
                         </small><br>
-                        <h6 class="card-subtitle mt-1 mb-1 text-success">Rp. <?php echo number_format($brg->harga, 0, ',', '.'); ?></h6>
+                        <h6 class="card-subtitle mb-1 mt-1 text-success">Rp. <?php echo number_format($brg->harga, 0, ',', '.'); ?></h6>
                         <div class="d-grid gap-2 d-md-block">
                         <?php
                                 if ($user['name'] == "") {
                                 } else {
-                                    echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-warning mb-1 mt-1">add to chart</div>');
+                                    echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-warning mb-1 mt-1">
+                                    <i class="fas fa-cart-plus"></i>
+                                    </div>');
                                 }
                                 ?>
                                 <?php echo anchor('dashboard/detail/'.$brg->id_brg, '<div class="btn btn-primary">Detail</div>'); ?>

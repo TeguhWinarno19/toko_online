@@ -4,6 +4,7 @@
         <tr>
             <th>NO</th>
             <th>NAMA</th>
+            <th>Role</th>
             <th>EMAIL</th>
             <th colspan="2">AKSI</th>
         </tr>
@@ -13,6 +14,16 @@
         <tr>
             <td><?php echo $no++ ?></td>
             <td><?php echo $brg->name ?></td>
+            <td>
+                <?php
+                if($brg->role_id == 1){
+                    echo "admin";
+                }
+                else{
+                    echo "user";
+                }
+                ?>
+            </td>
             <td><?php echo $brg->email ?></td>
             <td><?php echo anchor('admin/data_user/edit/' .$brg->id, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>' ) ?></td>
             <td><?php echo anchor('admin/data_user/hapus/' .$brg->id, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>')?></td>
