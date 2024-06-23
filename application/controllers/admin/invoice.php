@@ -56,5 +56,4 @@ class Invoice extends CI_Controller{
         $this->load->library('pdfgenerator');
         $this->pdfgenerator->generate($this->load->view('cetak_invoice_user', $data, true), "Semua_Invoice", 'A4', 'Potrait');
     }
-    
 }

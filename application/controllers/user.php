@@ -120,4 +120,5 @@ class User extends CI_Controller{
         $this->load->view('panduan_bayar', $data);
         $this->load->view('templates/footer', $data);
     }
+    
 }

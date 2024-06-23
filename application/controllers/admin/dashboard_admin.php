@@ -11,6 +11,7 @@ class Dashboard_admin extends CI_Controller{
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['pengguna'] = $this->model_user->tampil_data()->result();
         $data['invoice'] = $this->model_invoice->tampil_data();
+        
         $this->load->view('templates_admin/header',$data);
         $this->load->view('templates_admin/sidebar', $data);
         $this->load->view('admin/dashboard', $data);

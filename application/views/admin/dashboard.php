@@ -1,11 +1,12 @@
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-        <a href="<?= base_url('admin/invoice/cetak_semua_pdf');?>" 
-        class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50">
-        </i> Generate Report</a>
+        
+    <?php if (!empty($invoice)) { ?>
+        <a href="<?= base_url('admin/invoice/cetak_semua_pdf');?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
+        </a>
     </div>
-    <?php if (!empty($barang)) { ?>
     <?php $pendapatan = 0; ?>
     <?php $pending = 0; ?>
     <?php $invoiceku = 0; ?>
@@ -89,6 +90,7 @@
         </div>
     </div>
     <?php } else { ?>
-            <p style="font-style: italic; color: #888;">Maaf, tidak ada data yang tersedia saat ini.</p>
+        </div>
+        <p style="font-style: italic; color: #888;">Maaf, tidak ada data yang tersedia saat ini.</p>
     <?php } ?>
 </div>

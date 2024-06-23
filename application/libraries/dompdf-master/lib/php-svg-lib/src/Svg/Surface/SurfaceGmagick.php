@@ -46,7 +46,7 @@ class SurfaceGmagick implements SurfaceInterface
         $image->newimage($this->width, $this->height);
         $image->drawimage($this->canvas);
 
-        $tmp = tempnam(sys_get_temp_dir(), "gm");
+        $tmp = tempnam("", "gm");
 
         $image->write($tmp);
 
@@ -138,7 +138,7 @@ class SurfaceGmagick implements SurfaceInterface
                 $data = base64_decode(substr($data, 7));
             }
 
-            $image = tempnam(sys_get_temp_dir(), "svg");
+            $image = tempnam("", "svg");
             file_put_contents($image, $data);
         }
 
