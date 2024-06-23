@@ -13,12 +13,19 @@
 </head>
 <body>
     <div class="container-fluid align-center">
-        <div class="d-flex justify-content-center mb-4 align-center">
-            <img src="<?= base_url('assets/img/logokita.png') ?>" alt="Logo" width="150">
-        </div>
+        
         <h4 class="text-center">Detail Pesanan</h4>
-        <table class="table table-bordered table-hover table-striped">
+        <table class="table table-bordered">
             <tr>
+                <td rowspan="5" align="center" justify-content="center">
+                    <div class="justify-content-center align-center w-100">
+                        <img src="<?= base_url('assets/img/logokita.png') ?>" alt="Logo" width="150">
+                        <h6>The Cake longue</h6>
+                        <p>Jl. Puri teluk jambe <br>
+                            Kab. Karawang, jawa barat
+                        </p>
+                    </div>
+                </td>
                 <td>No. Invoice</td>
                 <td>: <?= $invoice->id ?></td>
             </tr>
@@ -72,7 +79,16 @@
                 </tr>
             </tbody>
         </table>
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; official the cake longue 2024 </span>
+                </div>
+            </div>
+        </footer>
+        
     </div>
+    
     <script src="<?= base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url() ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url() ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -80,5 +96,7 @@
     <script src="<?= base_url() ?>assets/vendor/chart.js/Chart.min.js"></script>
     <script src="<?= base_url() ?>assets/js/demo/chart-area-demo.js"></script>
     <script src="<?= base_url() ?>assets/js/demo/chart-pie-demo.js"></script>
+   
+
 </body>
 </html>

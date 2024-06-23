@@ -1,4 +1,7 @@
 <div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h3 mb-0 text-gray-800">Data Barang</h1>
+    </div>
     <button class="btn btn-sm btn-primary mb-3" data-toggle="modal" data-target="#tambah_barang"><i class="fas fa-plus fa-sm"></i> Tambah barang</button>
     <table class="table table-bordered">
         <tr>
