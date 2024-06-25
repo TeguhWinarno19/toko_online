@@ -12,12 +12,12 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3">
+                    <div class="card mb-3 p-2">
                         <div class="row no-gutters">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                             <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" class="card-img" alt="...">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $user['name']; ?></h5>
                                 <p class="card-text"><?= $user['email']; ?></p>
@@ -39,7 +39,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Login 2024 </span>
+                        <span>Copyright &copy; The cake longue 2024 </span>
                     </div>
                 </div>
             </footer>

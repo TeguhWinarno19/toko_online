@@ -1,16 +1,16 @@
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-        
+    <?php $pendapatan = 0; ?>
+    <?php $pending = 0; ?>
+    <?php $invoiceku = 0; ?>
+    <?php $total_pengguna = 0; ?>    
     <?php if (!empty($invoice)) { ?>
         <a href="<?= base_url('admin/invoice/cetak_semua_pdf');?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
             <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
         </a>
     </div>
-    <?php $pendapatan = 0; ?>
-    <?php $pending = 0; ?>
-    <?php $invoiceku = 0; ?>
-    <?php $total_pengguna = 0; ?>
+   
     <?php foreach ($pengguna as $usr): ?>
         <?php $total_pengguna ++;?>
     <?php endforeach; ?>        
