@@ -37,14 +37,18 @@
                                 </strong>
                             </td>
                         </tr>
-                    </table>
-                     <?php
-                                if ($user['name'] == "") {
+                        <tr>
+                            <td colspan="2">
+                            <?php
+                            if ($user['name'] == "") {
                                 } else {
-                                    echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-warning mb-1">add to chart</div>');
-                                }
-                                ?>
-                                <?php echo anchor('dashboard/index/'.$brg->id_brg, '<div class="btn btn-primary">Kembali</div>'); ?>
+                                echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-warning mb-1">add to chart</div>');
+                            }?>
+                            <?php echo anchor('dashboard/index/'.$brg->id_brg, '<div class="btn btn-primary">Kembali</div>'); ?>
+                            </td>
+                        </tr>
+                    </table>
+                    
                 </div>
             </div>
             <?php endforeach?>

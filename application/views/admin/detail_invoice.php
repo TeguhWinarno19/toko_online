@@ -1,13 +1,12 @@
 <div class="container-fluid">
-    <h4>Detail Pesanan
-        <div class="btn btn-sm btn-success">
-            No. Invoice :
-            <?php
-            echo $invoice->id
-            ?>
-        </div>
-    </h4>
-
+    <h4>Detail Pesanan</h4>
+    <br>
+    <div class="alert alert-success text-center">
+        No. Invoice :
+        <?php
+        echo $invoice->id
+        ?>
+    </div>
     <table class=" table table-bordered table-hover table-striped">
         <tr>
             <td>ID Barang</td>
@@ -41,7 +40,7 @@
 
     </table>
 
-    <a href="<?php echo base_url('admin/invoice/index') ?>">
+    <a href="<?php echo base_url('user/invoice') ?>">
     <div class="btn btn-sm btn-primary">Kembali</div></a>
 
 </div>
