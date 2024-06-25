@@ -17,7 +17,7 @@
     <?php foreach ($invoice as $inv): ?>
         <?php
         $pendapatan = $pendapatan + $inv->total_belanja;
-        if ($inv->status = 1){}
+        if ($inv->status == 1){}
         else{
             $pending = $pending + 1;
         }
