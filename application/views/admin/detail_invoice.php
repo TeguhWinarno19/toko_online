@@ -40,7 +40,7 @@
 
     </table>
 
-    <a href="<?php echo base_url('user/invoice') ?>">
+    <a href="<?php echo base_url('admin/invoice') ?>">
     <div class="btn btn-sm btn-primary">Kembali</div></a>
 
 </div>

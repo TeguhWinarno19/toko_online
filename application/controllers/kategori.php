@@ -11,8 +11,7 @@ public function cake()
     {
         $data['title'] = 'Cake Longue | Cake Galery';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $data['barang'] = $this->model_kategori->data_cake()
-        ->result();
+        $data['barang'] = $this->model_kategori->data_cake()->result();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('dashboard', $data);
